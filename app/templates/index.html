@@ -5,10 +5,14 @@ Allam Argueta
 {%endblock%}
 {% include 'includes/navbar.html'%}
 {% block main %}
-
+<div class="container vw-100 vh-100 d-flex flex-column justify-content-center align-items-center">
+    <h2 class="lead display-1">Mi portafolio</h2>
+    <a href="" class="btn btn-primary btn-lg">Ver Mas</a>
+</div>
 {%endblock%}
 {% block proyectos %}
 <div class="container">
+    <h2 class="text-center display-2 my-5">Mis Proyectos</h2>
     <div class="card" style="width: 18rem;">
         <img src="{{url_for('static', filename='images/proyecto1.png')}}" class="card-img-top" alt="...">
         <div class="card-body">
