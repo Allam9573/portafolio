@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}
+Allam Argueta
+{{super()}}
+{%endblock%}
+{% include 'includes/navbar.html'%}
+{% block main %}
+
+{%endblock%}
+{% block proyectos %}
+<div class="container">
+    <div class="card" style="width: 18rem;">
+        <img src="{{url_for('static', filename='images/proyecto1.png')}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Venta de Casas</h5>
+          <p class="card-text">Proyecto de venta de casas desarrollado con Bootstrap para la interfaz y para el backend Flask y MySQL .</p>
+          <a href="#" class="btn btn-primary">Ver Proyecto</a>
+        </div>
+      </div>
+</div>
+{%endblock%}
